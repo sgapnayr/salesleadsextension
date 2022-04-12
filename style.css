@@ -1,0 +1,107 @@
+/* Normalize */
+@import "./normalize.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --primary-color: #080024;
+  --secondary-color: #f0e0fc;
+  --white-color: #fcfcfc;
+}
+
+/* Main */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+}
+.body {
+  width: 90%;
+  height: 20vh;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -10rem;
+  display: flex;
+}
+img {
+  width: 20%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translateY(-200%);
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+img:hover {
+  transform: scale(1.05);
+  transform: translateY(-190%);
+}
+/* Input */
+input {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  outline-color: var(--secondary-color);
+  transition: 0.2s all ease-in-out;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background: white;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Button */
+#input-btn {
+  width: 40%;
+  background: var(--secondary-color);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  position: absolute;
+  transform: translateY(150%);
+}
+#input-btn:hover {
+  box-shadow: 1px 1px 10px rgba(240, 240, 240, 0.5);
+  transform: translateY(140%);
+}
+
+/* List */
+.lists {
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  margin-top: 16rem;
+}
+ul {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  padding-left: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Media */
+@media screen and (max-width: 768px) {
+  ul {
+    width: 50%;
+  }
+}

@@ -4,6 +4,9 @@ const inputBtn = document.getElementById('input-btn');
 const inputEl = document.getElementById('input-el');
 const ulEl = document.getElementById('ul-el');
 
+localStorage.setItem("myLeads", "www.example.com");
+localStorage.getItem("myLeads");
+localStorage.clear()
 
 inputBtn.addEventListener('click', () => {
         myLeads.push(inputEl.value);

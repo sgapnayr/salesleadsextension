@@ -17,6 +17,7 @@
 }
 body {
   min-width: 400px;
+  min-height: 400px;
 }
 
 /* Main */
@@ -42,7 +43,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(-100%);
+  transform: translateY(-120%);
   transition: 0.2s all ease-in-out;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
@@ -50,7 +51,7 @@ img {
 }
 img:hover {
   transform: scale(1.05);
-  transform: translateY(-190%);
+  transform: translateY(-110%);
 }
 /* Input */
 input {
